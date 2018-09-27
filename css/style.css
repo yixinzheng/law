@@ -1,0 +1,30 @@
+.fl{float:left} 
+.fr{float:right} 
+.clear{clear:both} 
+.clearfix:after{content:"\200B";display:block;height:0;clear:both} 
+.clearfix {*zoom:1;}/*IE/7/6*/ 
+a{
+    color: #2c2c3c
+}
+.titleArea {
+  font-size: 0.3rem;
+}
+body{background: #f2f6f8;font-family: 'Microsoft YaHei'}
+.mui-content{background: #ffffff;}
+.viewport{max-width:750px;position:relative;margin:0 auto;width:100%}
+/* 头部 */
+.titleArea{padding-left: 0.4rem;line-height: 1rem;background: #fff;}
+.titleArea img{margin-right: 0.25rem;margin-top: 0.31rem;height: 0.3rem}
+.location{padding-top: 0.3rem;border-bottom: #e8e8e8 1px solid;padding-bottom: 0.3rem}
+.location img{width: 0.75rem;height: 0.6rem;margin-left: 0.55rem;margin-right: 0.3rem;}
+.location .address{font-size: 0.28rem;line-height: 0.6rem;color: #2c2c3c;}
+/* 底部 */
+.footer{position: fixed;bottom: 0;width: 100%;text-align: center;border-top: 1px solid #a6a6a6;background: #f9f9f9;max-width: 750px;}
+.footer button{width: 95%;margin: 0 auto;margin-bottom: 0.15rem;margin-top: 0.15rem;height: 0.9rem;font-size: 0.28rem}
+/* 表单 */
+.mui-input-row label{color: #5f606d;font-size: 0.28rem;line-height: 0.5rem;font-family: "Microsoft YaHei"}
+.mui-input-row .title{text-align: right}
+.mui-input-row label~input{font-size: 0.28rem;padding-left: 15px!important;margin-top: 3px;}
+.mui-input-group .mui-input-row:after{left: 0}
+.mui-input-group .mui-input-row{height: 50px}
+.gray{height: 0.15rem;width: 100%;background: #f2f6f8;border-top: #e8e8e8 1px solid}
