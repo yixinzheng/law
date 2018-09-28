@@ -2,14 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>登录</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<header>
+    <div class="head-back"></div>
+    <div class="head-title">登录</div>
+    <div class="head-float"></div>
+    <div class="head-menu"></div>
+</header>
+<div class="mt1"></div>
+<div class="bread-box">
+    <div class="bread-con active">律师</div>
+    <div class="bread-con">律所</div>
+</div>
+<div class="login-logo">
+    <img src="images/login-logo.png" alt="">
+</div>
+<div class="login-container">
+    <div class="login-con">
+        <div class="login-icon icon-tel"></div>
+        <input type="text" class="login-input" placeholder="请输入用户名">
+        <div class="login-do icon-remove"></div>
+    </div>
+    <div class="login-con">
+        <div class="login-icon icon-pwd"></div>
+        <input type="password" class="login-input" placeholder="请输入密码">
+        <div class="login-do icon-togglePwd"></div>
+    </div>
+    <a href="" class="login-forget">忘记密码?</a>
+    <button type="submit" class="login-submit">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+</div>
+<div class="mt1"></div>
+<footer>
+    <a href="" class="foot-btn">首页</a>
+    <a href="" class="foot-btn">简介</a>
+    <a href="" class="foot-btn">资讯</a>
+    <a href="" class="foot-btn">会员</a>
+</footer>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-logo">
+                <img src="images/icon-logo.png" alt="">
+            </div>
+            <a href="" class="sider-btn active">首页</a>
+            <a href="" class="sider-btn">简介</a>
+            <a href="" class="sider-btn">资讯</a>
+            <a href="" class="sider-btn">会员</a>
+        </div>
+    </div>
+</div>
 <script src="js/common.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
-<script></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        $(".bread-con").on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+        $(".icon-remove").on('click', function () {
+            $(this).siblings('.login-input').val('')
+        })
+        $(".icon-togglePwd").on('click', function () {
+            if ($(this).siblings('.login-input').attr('type') === 'password') {
+                $(this).siblings('.login-input').attr('type', 'text')
+            } else {
+                $(this).siblings('.login-input').attr('type', 'password')
+            }
+        })
+    })
+</script>
 </body>
 </html>

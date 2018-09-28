@@ -4,13 +4,15 @@
 .clearfix:after{content:"\200B";display:block;height:0;clear:both} 
 .clearfix {*zoom:1;}/*IE/7/6*/ 
 a{
-    color: #2c2c3c
+    color: #2c2c3c;
+    text-decoration: none;
 }
 .titleArea {
   font-size: 0.3rem;
 }
+*{margin: 0;padding: 0;box-sizing: border-box;}
 body{background: #f2f6f8;font-family: 'Microsoft YaHei'}
-.mui-content{background: #ffffff;}
+.mui-content{background: #fff;}
 .viewport{max-width:750px;position:relative;margin:0 auto;width:100%}
 /* 头部 */
 .titleArea{padding-left: 0.4rem;line-height: 1rem;background: #fff;}
