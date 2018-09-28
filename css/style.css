@@ -1,13 +1,14 @@
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 5;
     height: 1rem;
     background: #0c77d0;
 }
 
-.head-title{
+.head-title {
     position: absolute;
     left: 0;
     top: 0;
@@ -20,8 +21,7 @@ header{
     color: #fff;
 }
 
-
-.head-back{
+.head-back {
     float: left;
     width: .6rem;
     height: 1rem;
@@ -29,7 +29,7 @@ header{
     background-size: .2rem auto;
 }
 
-.head-menu{
+.head-menu {
     float: right;
     width: .6rem;
     height: 1rem;
@@ -37,23 +37,41 @@ header{
     background-size: .3rem auto;
 }
 
-.head-float{
+.head-float {
     float: right;
     width: .3rem;
     height: 1rem;
 }
 
-footer{
+.head-logo{
+    float: left;
+    width: 50%;
+    height: 1rem;
+    background-position: .3rem center;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+.head-search {
+    float: right;
+    width: .7rem;
+    height: 1rem;
+    background: url("../images/icon-search.png") center center no-repeat;
+    background-size: .3rem auto;
+}
+
+footer {
     display: flex;
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 5;
     width: 100%;
     height: .88rem;
     background: #0c77d0;
 }
 
-.foot-btn{
+.foot-btn {
     width: 25%;
     height: .88rem;
     line-height: .88rem;
@@ -62,9 +80,8 @@ footer{
     color: #fff;
 }
 
-
 /*侧边导航*/
-.sider-box{
+.sider-box {
     position: fixed;
     left: 100%;
     right: 0;
@@ -74,19 +91,20 @@ footer{
     overflow: hidden;
 }
 
-.sider-left{
+.sider-left {
     float: left;
     width: 15%;
     height: 100%;
 }
 
-.sider-right{
+.sider-right {
     position: relative;
     float: right;
     width: 85%;
     height: 100%;
 }
-.sider-overlay{
+
+.sider-overlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -97,7 +115,7 @@ footer{
     opacity: .9;
 }
 
-.sider-cont{
+.sider-cont {
     position: absolute;
     left: 0;
     right: 0;
@@ -107,19 +125,20 @@ footer{
     padding-top: 1rem;
 }
 
-.sider-logo{
+.sider-logo {
     height: 3rem;
     line-height: 3rem;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.sider-logo img{
+.sider-logo img {
     display: block;
     height: 60%;
     margin: 0 auto;
 }
-.sider-btn{
+
+.sider-btn {
     display: block;
     height: 1rem;
     line-height: 1rem;
@@ -130,17 +149,18 @@ footer{
     background-repeat: no-repeat;
     background-size: 1rem auto;
 }
-.sider-btn.active{
+
+.sider-btn.active {
     background-color: #0c77d0;
 }
 
 /*登录*/
-.bread-box{
+.bread-box {
     display: flex;
     height: 1rem;
 }
 
-.bread-con{
+.bread-con {
     width: 50%;
     line-height: .99rem;
     font-size: .36rem;
@@ -150,27 +170,27 @@ footer{
     transition: .3s all ease-in-out;
 }
 
-.bread-con.active{
+.bread-con.active {
     color: #0c77d0;
     border-bottom: .06rem solid #0c77d0;
 }
 
-.login-logo{
+.login-logo {
     margin: .7rem auto;
     text-align: center;
 }
 
-.login-logo img{
+.login-logo img {
     display: inline-block;
     width: 50%;
 }
 
-.login-container{
+.login-container {
     width: 80%;
     margin: 0 auto;
 }
 
-.login-con{
+.login-con {
     position: relative;
     height: 1.3rem;
     margin: .25rem auto;
@@ -178,14 +198,14 @@ footer{
     box-shadow: 0 0 .2rem #ccc;
 }
 
-.login-icon{
+.login-icon {
     float: left;
     width: 12%;
     height: 1.3rem;
     margin-left: 3%;
 }
 
-.login-input{
+.login-input {
     float: right;
     width: 85%;
     height: 1.3rem;
@@ -194,15 +214,15 @@ footer{
     border: none;
 }
 
-.icon-tel{
+.icon-tel {
     background: url("../images/icon-tel.png") center no-repeat;
 }
 
-.icon-pwd{
+.icon-pwd {
     background: url("../images/icon-pwd.png") center no-repeat;
 }
 
-.login-do{
+.login-do {
     position: absolute;
     right: .4rem;
     top: 0;
@@ -211,15 +231,15 @@ footer{
     height: 1.3rem;
 }
 
-.icon-remove{
+.icon-remove {
     background: url("../images/icon-remove.png") center no-repeat;
 }
 
-.icon-togglePwd{
+.icon-togglePwd {
     background: url("../images/icon-togglePwd.png") center no-repeat;
 }
 
-.login-forget{
+.login-forget {
     display: block;
     height: .5rem;
     line-height: .5rem;
@@ -229,7 +249,7 @@ footer{
     text-align: right;
 }
 
-.login-submit{
+.login-submit {
     display: block;
     width: 100%;
     height: 1.2rem;
@@ -242,22 +262,103 @@ footer{
     box-shadow: 0 0 .1rem #0c77d0;
 }
 
+/*首页*/
+.banner-img{
+    display: block;
+    width: 100%;
+}
+.banner-title{
+    height: .75rem;
+    line-height: .75rem;
+    padding: 0 .2rem;
+    font-size: .24rem;
+    color: #fff;
+    background: url("../images/icon-opacity.png");
+    background-size: 100% 100%;
+}
+.index-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.index-con{
+    width: 25%;
+    height: 1.4rem;
+    padding-top: 1rem;
+    line-height: .4rem;
+    margin: .1rem auto;
+    font-size: .26rem;
+    text-align: center;
+    color: #666;
+    background-position: center .1rem;
+    background-repeat: no-repeat;
+    background-size: .8rem auto;
+}
+
+.icon-gk {
+    background-image: url("../images/tag-gk.png");
+}
+
+.icon-dt {
+    background-image: url("../images/tag-dt.png");
+}
+
+.icon-gg {
+    background-image: url("../images/tag-gg.png");
+}
+
+.icon-yj {
+    background-image: url("../images/tag-yj.png");
+}
+
+.icon-wh {
+    background-image: url("../images/tag-wh.png");
+}
+
+.icon-hy {
+    background-image: url("../images/tag-hy.png");
+}
+
+.icon-wyh {
+    background-image: url("../images/tag-wyh.png");
+}
+
+.icon-gd {
+    background-image: url("../images/tag-gd.png");
+}
+
+.index-foot{
+    padding: .2rem;
+    line-height: .4rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #898989;
+    background-color: #e9e9e9;
+}
+
+.index-word img{
+    display: inline-block;
+    margin: 0 .1rem;
+}
+
 /*律协概况*/
-.survey-box{
+.survey-box {
     display: block;
     height: .9rem;
     line-height: .9rem;
     border-bottom: 1px solid #666;
 }
 
-.survey-icon{
+.survey-icon {
     float: left;
     width: .8rem;
     height: .9rem;
     background: url("../images/icon-article.png") center no-repeat;
 }
 
-.survey-title{
+.survey-title {
     float: left;
     width: 70%;
     font-size: .32rem;
@@ -267,7 +368,7 @@ footer{
     text-overflow: ellipsis;
 }
 
-.survey-more{
+.survey-more {
     float: right;
     width: .8rem;
     height: .9rem;
@@ -275,7 +376,7 @@ footer{
 }
 
 /*行业规范*/
-.norm-box{
+.norm-box {
     display: block;
     width: 95%;
     margin: 0 auto;
@@ -283,19 +384,19 @@ footer{
     border-bottom: 2px dashed #ccc;
 }
 
-.norm-title{
+.norm-title {
     line-height: .5rem;
     font-size: .32rem;
     padding: .1rem 0;
 }
 
-.norm-short{
+.norm-short {
     line-height: .4rem;
     font-size: .24rem;
     color: #898989;
 }
 
-.norm-do{
+.norm-do {
     height: .6rem;
     line-height: .6rem;
     font-size: .2rem;
@@ -303,18 +404,20 @@ footer{
     overflow: hidden;
 }
 
-.norm-eye{
+.norm-eye {
     padding-left: .4rem;
     background: url("../images/icon-eye.png") left center no-repeat;
 }
+
 /*行业规范详情*/
-.normView-top{
+.normView-top {
     padding: .2rem .3rem 0 .3rem;
     line-height: .5rem;
     font-size: .36rem;
     color: #333;
 }
-.normView-control{
+
+.normView-control {
     height: .7rem;
     line-height: .7rem;
     padding: 0 .3rem;
@@ -322,71 +425,85 @@ footer{
     color: #898989;
     overflow: hidden;
 }
-.normView-date{
+
+.normView-date {
     padding-left: .35rem;
     margin-right: .4rem;
     background: url("../images/icon-clock.png") left center no-repeat;
     background-size: .2rem auto;
 }
-.normView-eye{
+
+.normView-eye {
     padding-left: .35rem;
     margin-right: .4rem;
     background: url("../images/icon-view.png") left center no-repeat;
     background-size: .2rem auto;
 }
-.normView-pub{
+
+.normView-pub {
     padding-left: .35rem;
     margin-right: .4rem;
     background: url("../images/icon-pub.png") left center no-repeat;
     background-size: .2rem auto;
 }
-.normView-box{
+
+.normView-box {
     border-top: 1px solid #666;
     padding: .3rem;
     line-height: .5rem;
     font-size: .24rem;
     color: #898989;
 }
-.normView-box img{
+
+.normView-box img {
     display: block;
     max-width: 100%;
     margin: .3rem auto;
 }
+
 /*联系律协*/
-.contact-map{
+.contact-map {
     display: block;
     width: 100%;
 }
-.contact-box{
+
+.contact-box {
     padding: .3rem .5rem;
 }
-.contact-con{
+
+.contact-con {
     padding: .1rem .6rem;
     line-height: .4rem;
     font-size: .28rem;
     background-position: left center;
 }
-.contact-addr{
+
+.contact-addr {
     background: url("../images/tag-addr.png") left center no-repeat;
     background-size: .3rem auto;
 }
-.contact-zipCode{
+
+.contact-zipCode {
     background: url("../images/tag-zipCode.png") left center no-repeat;
     background-size: .3rem auto;
 }
-.contact-tel{
+
+.contact-tel {
     background: url("../images/tag-tel.png") left center no-repeat;
     background-size: .3rem auto;
 }
-.contact-fax{
+
+.contact-fax {
     background: url("../images/tag-fax.png") left center no-repeat;
     background-size: .3rem auto;
 }
-.contact-email{
+
+.contact-email {
     background: url("../images/tag-email.png") left center no-repeat;
     background-size: .3rem auto;
 }
-.contact-btn{
+
+.contact-btn {
     height: .88rem;
     line-height: .88rem;
     margin: .2rem .5rem;
@@ -396,28 +513,34 @@ footer{
     border-radius: .1rem;
     background-color: #0c77d0;
 }
-.contact-qrcode{
+
+.contact-qrcode {
     margin: .4rem 0;
     text-align: center;
 }
-.contact-qrcode img{
+
+.contact-qrcode img {
     display: inline-block;
     max-width: 100%;
 }
+
 /*视频报道*/
-.video-box{
+.video-box {
     display: flex;
     flex-wrap: wrap;
 }
-.video-con{
+
+.video-con {
     width: 50%;
 }
-.video-con img{
+
+.video-con img {
     display: block;
     width: 100%;
     height: auto;
 }
-.video-title{
+
+.video-title {
     margin: .3rem auto;
     height: .8rem;
     line-height: .4rem;
@@ -426,14 +549,16 @@ footer{
     color: #333;
     overflow: hidden;
 }
+
 /*律师事务所列表*/
-.law-top{
+.law-top {
     display: flex;
     justify-content: space-between;
     height: 1rem;
     background-color: #fff;
 }
-.law-select{
+
+.law-select {
     width: 32%;
     text-align: center;
     text-align-last: center;
@@ -441,19 +566,23 @@ footer{
     color: #666;
     background-color: #fff;
     outline: none;
+    border: none;
 }
-.law-search{
+
+.law-search {
     width: 32%;
     height: 1rem;
     display: flex;
     justify-content: center;
 }
-.law-search-icon{
+
+.law-search-icon {
     width: 30%;
     background: url("../images/icon-search2.png") center no-repeat;
     background-size: 40% auto;
 }
-.law-search-input{
+
+.law-search-input {
     width: 50%;
     height: 1rem;
     font-size: .32rem;
@@ -461,7 +590,110 @@ footer{
     outline: none;
     border: none;
 }
+
+.law-count {
+    height: 1rem;
+    line-height: .98rem;
+    padding: 0 .35rem;
+    font-size: .32rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+.law-con {
+    display: flex;
+    padding: .25rem 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.law-imgBox {
+    width: 30%;
+}
+
+.law-imgBox img {
+    display: block;
+    max-width: 95%;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.law-cont {
+    width: 70%;
+}
+
+.law-name {
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .32rem;
+}
+
+.law-code {
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #898989;
+}
+
+.law-addr {
+    height: .8rem;
+    line-height: .4rem;
+    font-size: .24rem;
+    color: #898989;
+    overflow: hidden;
+}
+
+.place-box{
+    width: 96%;
+    margin: .2rem auto;
+}
+
+.place-con{
+    margin-top: .2rem;
+}
+
+.place-first{
+    height: .7rem;
+    line-height: .7rem;
+    padding: 0 .3rem;
+    font-size: .32rem;
+    color: #fff;
+    border-radius: .06rem;
+    background-color: #0c77d0;
+}
+.place-arrow{
+    width: .19rem;
+    height: .7rem;
+    line-height: .7rem;
+    float: right;
+    transition: .3s all ease-in-out;
+}
+.place-arrow img{
+    display: inline-block;
+    width: 100%;
+}
+
+.place-con.active .place-arrow{
+    line-height: .55rem;
+    transform: rotate(180deg);
+}
+
+.place-con.active .place-secondCon{
+    display: block;
+}
+
+.place-secondCon{
+    display: none;
+    padding: .3rem;
+}
+
+.place-second{
+    line-height: .5rem;
+    font-size: .24rem;
+    color: #333;
+}
+
 /*public*/
-.mt1{
+.mt1 {
     margin-top: 1rem;
 }
